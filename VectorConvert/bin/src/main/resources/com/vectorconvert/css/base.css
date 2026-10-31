@@ -1,0 +1,152 @@
+/* Base common layout and typography */
+
+.root-container {
+    -fx-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -fx-font-size: 13px;
+}
+
+.app-header {
+    -fx-padding: 10px 20px;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.app-logo {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 0, 1);
+}
+
+.app-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.app-subtitle {
+    -fx-font-size: 12px;
+}
+
+.btn-theme {
+    -fx-background-radius: 6px;
+    -fx-padding: 6px 14px;
+    -fx-cursor: hand;
+}
+
+/* Drop Zone Styles */
+.drop-zone {
+    -fx-padding: 40px;
+    -fx-border-width: 2px;
+    -fx-border-style: dashed;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-max-width: 550px;
+    -fx-max-height: 350px;
+    -fx-cursor: hand;
+}
+
+.drop-zone-active {
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.drop-zone-icon {
+    -fx-font-size: 48px;
+}
+
+.drop-zone-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.drop-zone-subtitle {
+    -fx-font-size: 12px;
+}
+
+/* Preview Styles */
+.preview-top-bar {
+    -fx-padding: 8px 16px;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.preview-pane {
+    -fx-padding: 10px;
+}
+
+.preview-header-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.btn-tool {
+    -fx-background-radius: 4px;
+    -fx-padding: 5px 12px;
+    -fx-cursor: hand;
+}
+
+/* File Size Comparison Bar (Additional Feature 2) */
+.file-size-comparison-bar {
+    -fx-padding: 10px 16px;
+    -fx-border-width: 1px 0 0 0;
+    -fx-font-size: 12px;
+}
+
+.meta-title {
+    -fx-font-weight: normal;
+}
+
+.meta-value {
+    -fx-font-weight: bold;
+}
+
+.meta-value-highlight {
+    -fx-font-weight: bold;
+}
+
+.meta-separator {
+    -fx-opacity: 0.5;
+}
+
+/* Settings Panel Styles */
+.settings-panel {
+    -fx-padding: 20px;
+    -fx-pref-width: 260px;
+    -fx-border-width: 0 0 0 1px;
+}
+
+.settings-section-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.setting-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.setting-subtext {
+    -fx-font-size: 11px;
+}
+
+.btn-primary {
+    -fx-background-radius: 6px;
+    -fx-padding: 10px 16px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.btn-nav {
+    -fx-background-radius: 4px;
+    -fx-padding: 6px 14px;
+    -fx-cursor: hand;
+}
+
+.nav-index-label {
+    -fx-font-weight: bold;
+}
+
+/* Status Bar */
+.status-bar {
+    -fx-padding: 8px 16px;
+    -fx-border-width: 1px 0 0 0;
+}
+
+.status-text {
+    -fx-font-size: 12px;
+}

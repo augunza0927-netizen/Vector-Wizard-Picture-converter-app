@@ -1,0 +1,144 @@
+
+
+.root-container {
+    -fx-background-color: #f7f9fa;
+    -fx-text-fill: #1a202c;
+}
+
+.app-header {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+}
+
+.app-title {
+    -fx-text-fill: #1a365d;
+}
+
+.app-subtitle {
+    -fx-text-fill: #718096;
+}
+
+.btn-theme {
+    -fx-background-color: #edf2f7;
+    -fx-text-fill: #2d3748;
+    -fx-border-color: #cbd5e0;
+}
+
+.btn-theme:hover {
+    -fx-background-color: #e2e8f0;
+}
+
+.drop-zone {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #90cdf4;
+}
+
+.drop-zone:hover {
+    -fx-background-color: #ebf8ff;
+    -fx-border-color: #3182ce;
+}
+
+.drop-zone-icon {
+    -fx-text-fill: #3182ce;
+}
+
+.drop-zone-title {
+    -fx-text-fill: #2d3748;
+}
+
+.drop-zone-subtitle {
+    -fx-text-fill: #718096;
+}
+
+.preview-top-bar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+}
+
+.preview-pane {
+    -fx-background-color: #f8fafc;
+}
+
+.preview-header-label {
+    -fx-text-fill: #4a5568;
+}
+
+.btn-tool {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2d3748;
+    -fx-border-color: #cbd5e0;
+}
+
+.btn-tool:hover {
+    -fx-background-color: #edf2f7;
+}
+
+.file-size-comparison-bar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+}
+
+.meta-title {
+    -fx-text-fill: #718096;
+}
+
+.meta-value {
+    -fx-text-fill: #2b6cb0;
+}
+
+.meta-value-highlight {
+    -fx-text-fill: #276749;
+}
+
+.meta-separator {
+    -fx-text-fill: #cbd5e0;
+}
+
+.settings-panel {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+}
+
+.settings-section-title {
+    -fx-text-fill: #1a202c;
+}
+
+.setting-label {
+    -fx-text-fill: #4a5568;
+}
+
+.setting-subtext {
+    -fx-text-fill: #718096;
+}
+
+.btn-primary {
+    -fx-background-color: #3182ce;
+    -fx-text-fill: #ffffff;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #2b6cb0;
+}
+
+.btn-nav {
+    -fx-background-color: #edf2f7;
+    -fx-text-fill: #2d3748;
+    -fx-border-color: #cbd5e0;
+}
+
+.btn-nav:hover {
+    -fx-background-color: #e2e8f0;
+}
+
+.nav-index-label {
+    -fx-text-fill: #4a5568;
+}
+
+.status-bar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+}
+
+.status-text {
+    -fx-text-fill: #718096;
+}

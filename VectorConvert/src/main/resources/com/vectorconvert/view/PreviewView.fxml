@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.WebView?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.vectorconvert.controller.PreviewController"
+            styleClass="preview-container">
+
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="12" styleClass="preview-top-bar">
+            <Button fx:id="zoomInButton" text="⁺ Zoom In" onAction="#handleZoomIn" styleClass="btn-tool" />
+            <Button fx:id="zoomOutButton" text="⁻ Zoom Out" onAction="#handleZoomOut" styleClass="btn-tool" />
+            <Button fx:id="zoomFitButton" text="⛶ Zoom to Fit" onAction="#handleZoomFit" styleClass="btn-tool" />
+        </HBox>
+    </top>
+
+
+    <center>
+        <SplitPane dividerPositions="0.5" styleClass="split-preview">
+
+            <VBox alignment="CENTER" spacing="8" styleClass="preview-pane">
+                <Label text="Original Image" styleClass="preview-header-label" />
+                <ScrollPane fx:id="originalScrollPane" fitToWidth="true" fitToHeight="true" VBox.vgrow="ALWAYS">
+                    <StackPane alignment="CENTER">
+                        <Group fx:id="originalGroup">
+                            <ImageView fx:id="originalImageView" preserveRatio="true" />
+                        </Group>
+                    </StackPane>
+                </ScrollPane>
+            </VBox>
+
+
+            <VBox alignment="CENTER" spacing="8" styleClass="preview-pane">
+                <Label text="Vectorized Result" styleClass="preview-header-label" />
+                <ScrollPane fx:id="vectorScrollPane" fitToWidth="true" fitToHeight="true" VBox.vgrow="ALWAYS">
+                    <StackPane alignment="CENTER">
+                        <WebView fx:id="vectorWebView" />
+                    </StackPane>
+                </ScrollPane>
+            </VBox>
+        </SplitPane>
+    </center>
+
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="20" styleClass="file-size-comparison-bar">
+            <Label text="Original File Size:" styleClass="meta-title" />
+            <Label fx:id="originalSizeLabel" text="-- KB" styleClass="meta-value" />
+
+            <Label text="|" styleClass="meta-separator" />
+
+            <Label text="Vector (SVG) Size:" styleClass="meta-title" />
+            <Label fx:id="vectorSizeLabel" text="-- KB" styleClass="meta-value" />
+
+            <Label text="|" styleClass="meta-separator" />
+
+            <Label text="Size Ratio:" styleClass="meta-title" />
+            <Label fx:id="ratioLabel" text="--%" styleClass="meta-value-highlight" />
+        </HBox>
+    </bottom>
+</BorderPane>

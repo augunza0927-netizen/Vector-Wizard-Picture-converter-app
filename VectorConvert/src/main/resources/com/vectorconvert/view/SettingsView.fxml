@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.vectorconvert.controller.SettingsController"
+      spacing="18"
+      styleClass="settings-panel">
+
+    <Label text="Configuration &amp; Export" styleClass="settings-section-title" />
+
+
+    <Button fx:id="exportAllButton" text="Export All" maxWidth="Infinity" onAction="#handleExportAll" styleClass="btn-primary" />
+
+    <Separator />
+
+
+    <VBox spacing="6">
+        <Label text="Detail level" styleClass="setting-label" />
+        <ComboBox fx:id="detailLevelComboBox" maxWidth="Infinity" />
+    </VBox>
+
+
+    <VBox spacing="8">
+        <Label text="Colors" styleClass="setting-label" />
+        <RadioButton fx:id="unlimitedColorRadio" text="Unlimited" selected="false">
+            <toggleGroup>
+                <ToggleGroup fx:id="colorToggleGroup" />
+            </toggleGroup>
+        </RadioButton>
+
+        <HBox alignment="CENTER_LEFT" spacing="8">
+            <RadioButton fx:id="customColorRadio" text="Custom" toggleGroup="$colorToggleGroup" selected="true" />
+            <Spinner fx:id="customColorSpinner" prefWidth="80" editable="false" />
+            <Label text="colors (2 - 5)" styleClass="setting-subtext" />
+        </HBox>
+    </VBox>
+
+
+    <CheckBox fx:id="removeBackgroundCheckBox" text="Remove background" styleClass="setting-checkbox" />
+
+    <Separator />
+
+
+    <VBox spacing="8" alignment="CENTER">
+        <Label text="Image Navigation" styleClass="setting-label" />
+        <HBox alignment="CENTER" spacing="12">
+            <Button fx:id="backButton" text="◄ Back" onAction="#handleBack" styleClass="btn-nav" />
+            <Label fx:id="imageIndexLabel" text="0 / 0" styleClass="nav-index-label" />
+            <Button fx:id="nextButton" text="Next ►" onAction="#handleNext" styleClass="btn-nav" />
+        </HBox>
+    </VBox>
+
+</VBox>

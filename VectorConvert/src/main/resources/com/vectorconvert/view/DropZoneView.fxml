@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.vectorconvert.controller.DropZoneController"
+      fx:id="dropTarget"
+      alignment="CENTER"
+      spacing="16"
+      styleClass="drop-zone"
+      onDragOver="#handleDragOver"
+      onDragEntered="#handleDragEntered"
+      onDragExited="#handleDragExited"
+      onDragDropped="#handleDragDropped"
+      onMouseClicked="#handleClick">
+
+    <Label text="⤓" styleClass="drop-zone-icon" />
+    <Label text="Drag &amp; Drop images or ZIP archive here" styleClass="drop-zone-title" />
+    <Label text="Supports .jpg, .png, and .zip files" styleClass="drop-zone-subtitle" />
+</VBox>

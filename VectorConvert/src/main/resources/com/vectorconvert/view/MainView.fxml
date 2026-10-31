@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:id="rootPane"
+            fx:controller="com.vectorconvert.controller.MainController"
+            prefWidth="1080" prefHeight="720"
+            styleClass="root-container">
+
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="12" styleClass="app-header">
+            <ImageView fitHeight="36" fitWidth="36" preserveRatio="true" styleClass="app-logo">
+                <image>
+                    <Image url="@../Image/Wizard Logo.jpg" />
+                </image>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" spacing="1">
+                <Label text="VectorWizard" styleClass="app-title" />
+                <Label text="Convert to Vector Utility" styleClass="app-subtitle" />
+            </VBox>
+            <Region HBox.hgrow="ALWAYS" />
+
+            <Button fx:id="themeToggleButton" text=" Dark Mode" onAction="#handleToggleTheme" styleClass="btn-theme" />
+        </HBox>
+    </top>
+
+
+    <center>
+        <StackPane fx:id="contentArea" styleClass="content-area">
+            <!-- Included DropZone as initial view -->
+            <fx:include fx:id="dropZone" source="DropZoneView.fxml" />
+
+
+            <BorderPane fx:id="editorContainer" visible="false" managed="false">
+                <center>
+                    <fx:include fx:id="preview" source="PreviewView.fxml" />
+                </center>
+                <right>
+                    <fx:include fx:id="settings" source="SettingsView.fxml" />
+                </right>
+            </BorderPane>
+        </StackPane>
+    </center>
+
+
+    <bottom>
+        <HBox alignment="CENTER_LEFT" spacing="12" styleClass="status-bar">
+            <ProgressBar fx:id="batchProgressBar" prefWidth="220" progress="0.0" />
+            <Label fx:id="statusLabel" text="Ready" styleClass="status-text" HBox.hgrow="ALWAYS" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
